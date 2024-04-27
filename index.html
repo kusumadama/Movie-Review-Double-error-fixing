@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Movie Review Site</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, .hero, .container, footer { padding: 20px; text-align: center; }
+        header { background: #333; color: #fff; }
+        header a { color: #fff; text-decoration: none; margin: 0 10px; }
+        .hero { background: #eee; margin-bottom: 20px; }
+        .movie-review, .news-item, .movie-card { margin-bottom: 20px; padding: 20px; border: 1px solid #ddd; }
+        .movie-card { float: left; width: calc(33.333% - 20px); margin: 0 10px 20px 10px; box-sizing: border-box; }
+        footer { background: #333; color: #fff; clear: both; }
+        footer a, footer form { color: #fff; margin: 20px 0; display: block; }
+        .social-links, .legal-links { margin-bottom: 20px; }
+        @media (max-width: 768px) {
+            .movie-card { width: calc(50% - 20px); }
+        }
+        @media (max-width: 480px) {
+            .movie-card { width: 100%; margin: 0 0 20px 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie Review Site</h1>
+        <nav>
+            <a href="#movie-news">News</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#upcomingMovies">Upcoming</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Welcome to Our Movie Review Site</h2>
+        <p>Discover the latest movies, reviews, and behind-the-scenes content.</p>
+    </div>
+
+    <div class="container" id="reviews">
+        <h2>Featured Reviews</h2>
+        <div class="movie-review">
+            <h3>Inception</h3>
+            <p>★★★★☆ - A mind-bending exploration of dream manipulation.</p>
+        </div>
+        <!-- More reviews here -->
+    </div>
+
+    <div class="container" id="upcomingMovies">
+        <h2>Upcoming Movies</h2>
+        <div class="movie-card">
+            <h3>Interstellar Sequel</h3>
+            <p>Coming soon in 2023</p>
+        </div>
+        <!-- More upcoming movies here -->
+        <div style="clear: both;"></div>
+    </div>
+
+    <section id="movie-news">
+        <h2>Movie News & Insights</h2>
+        <article class="news-item">
+            <h3>Exclusive Interview with the Cast of 'Inception'</h3>
+            <p>Date: Jan 1, 2023</p>
+            <p>Join us as we dive deep into the minds of the 'Inception' cast members.</p>
+        </article>
+        <!-- More news items here -->
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our mission is to provide up-to-date reviews and captivating movie content to fans around the world.</p>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            Follow us: 
+            <a href="https://facebook.com">Facebook</a> 
+            <a href="https://twitter.com">Twitter</a>
+        </div>
+        <form>
+            <input type="email" aria-label="Email for newsletter subscription" placeholder="Subscribe to newsletter">
+            <button type="submit">Subscribe</button>
+        </form>
+        <div class="legal-links">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>
